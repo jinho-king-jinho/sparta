@@ -1,24 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f48ab71e-0a78-4c01-bda9-44746d61caf4" name="Default Changelist" comment="" />
+    <list default="true" id="f48ab71e-0a78-4c01-bda9-44746d61caf4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/crawl.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dinosales44homework.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask111.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/flask_tt.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo_db.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo_db_practice.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mongo_db_start.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/mystyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/4.6homework.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/inininindexdexdex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sparta.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/sparta.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1ZekqzKytX9n2Fr7z31a1YdFz3h" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
-  <component name="RunManager" selected="Python.homework1">
-    <configuration name="hello" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.dinosales44homework">
+    <configuration name="crawl" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="sparta" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -30,7 +66,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/hello.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/crawl.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -39,7 +75,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="homework1" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="dinosales44homework" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="sparta" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -51,7 +87,70 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/homework1.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dinosales44homework.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="flask111" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sparta" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask111.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="flask_tt" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sparta" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/flask_tt.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="mongo_db_start" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="sparta" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/mongo_db_start.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -62,8 +161,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.homework1" />
-        <item itemvalue="Python.hello" />
+        <item itemvalue="Python.dinosales44homework" />
+        <item itemvalue="Python.flask111" />
+        <item itemvalue="Python.flask_tt" />
+        <item itemvalue="Python.crawl" />
+        <item itemvalue="Python.mongo_db_start" />
       </list>
     </recent_temporary>
   </component>
@@ -85,39 +187,84 @@
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
     <state x="880" y="365" key="#Inspections/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1585302216935" />
-    <state x="743" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585306495667">
+    <state x="743" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1585722868056">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
-    <state x="743" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1585306495667" />
-    <state width="576" height="817" key="GridCell.Tab.0.bottom" timestamp="1585310359690">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state width="877" height="817" key="GridCell.Tab.0.bottom/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1585308329097" />
-    <state width="576" height="817" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.373.1920.994@0.23.2560.1417" timestamp="1585310359690" />
-    <state width="576" height="817" key="GridCell.Tab.0.center" timestamp="1585310359690">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state width="877" height="817" key="GridCell.Tab.0.center/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1585308329095" />
-    <state width="576" height="817" key="GridCell.Tab.0.center/0.23.2560.1417/2560.373.1920.994@0.23.2560.1417" timestamp="1585310359690" />
-    <state width="576" height="817" key="GridCell.Tab.0.left" timestamp="1585310359689">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state width="877" height="817" key="GridCell.Tab.0.left/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1585308329094" />
-    <state width="576" height="817" key="GridCell.Tab.0.left/0.23.2560.1417/2560.373.1920.994@0.23.2560.1417" timestamp="1585310359689" />
-    <state width="576" height="817" key="GridCell.Tab.0.right" timestamp="1585310359690">
-      <screen x="0" y="23" width="2560" height="1417" />
-    </state>
-    <state width="877" height="817" key="GridCell.Tab.0.right/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1585308329096" />
-    <state width="576" height="817" key="GridCell.Tab.0.right/0.23.2560.1417/2560.373.1920.994@0.23.2560.1417" timestamp="1585310359690" />
-    <state x="780" y="329" key="SettingsEditor" timestamp="1585307041247">
+    <state x="743" y="361" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1585722868056" />
+    <state x="1380" y="344" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1586143458142">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
-    <state x="780" y="329" key="SettingsEditor/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1585307041247" />
-    <state x="917" y="672" key="com.intellij.ide.util.TipDialog" timestamp="1585310442142">
+    <state x="690" y="195" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1280.725@0.23.1280.725" timestamp="1585571493357" />
+    <state x="1380" y="344" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1586143458142" />
+    <state x="655" y="23" key="#flask_tt" timestamp="1585571042189">
+      <screen x="0" y="23" width="1280" height="725" />
+    </state>
+    <state x="655" y="23" key="#flask_tt/0.23.1280.725@0.23.1280.725" timestamp="1585571042189" />
+    <state width="288" height="1232" key="GridCell.Tab.0.bottom" timestamp="1586151717862">
       <screen x="0" y="23" width="2560" height="1417" />
     </state>
-    <state x="917" y="643" key="com.intellij.ide.util.TipDialog/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1585306447509" />
+    <state width="619" height="180" key="GridCell.Tab.0.bottom/0.23.1280.725@0.23.1280.725" timestamp="1585747821043" />
+    <state width="611" height="817" key="GridCell.Tab.0.bottom/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1585727597415" />
+    <state width="288" height="1232" key="GridCell.Tab.0.bottom/0.23.2560.1417/2560.373.1920.994@0.23.2560.1417" timestamp="1586151717862" />
+    <state width="288" height="1232" key="GridCell.Tab.0.center" timestamp="1586151717861">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="619" height="180" key="GridCell.Tab.0.center/0.23.1280.725@0.23.1280.725" timestamp="1585747821043" />
+    <state width="611" height="817" key="GridCell.Tab.0.center/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1585727597414" />
+    <state width="288" height="1232" key="GridCell.Tab.0.center/0.23.2560.1417/2560.373.1920.994@0.23.2560.1417" timestamp="1586151717861" />
+    <state width="288" height="1232" key="GridCell.Tab.0.left" timestamp="1586151717861">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="619" height="180" key="GridCell.Tab.0.left/0.23.1280.725@0.23.1280.725" timestamp="1585747821042" />
+    <state width="611" height="817" key="GridCell.Tab.0.left/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1585727597413" />
+    <state width="288" height="1232" key="GridCell.Tab.0.left/0.23.2560.1417/2560.373.1920.994@0.23.2560.1417" timestamp="1586151717861" />
+    <state width="288" height="1232" key="GridCell.Tab.0.right" timestamp="1586151717861">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state width="619" height="180" key="GridCell.Tab.0.right/0.23.1280.725@0.23.1280.725" timestamp="1585747821043" />
+    <state width="611" height="817" key="GridCell.Tab.0.right/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1585727597414" />
+    <state width="288" height="1232" key="GridCell.Tab.0.right/0.23.2560.1417/2560.373.1920.994@0.23.2560.1417" timestamp="1586151717861" />
+    <state width="833" height="224" key="GridCell.Tab.1.bottom" timestamp="1585747818356">
+      <screen x="0" y="23" width="1280" height="725" />
+    </state>
+    <state width="833" height="224" key="GridCell.Tab.1.bottom/0.23.1280.725@0.23.1280.725" timestamp="1585747818356" />
+    <state width="833" height="224" key="GridCell.Tab.1.center" timestamp="1585747818355">
+      <screen x="0" y="23" width="1280" height="725" />
+    </state>
+    <state width="833" height="224" key="GridCell.Tab.1.center/0.23.1280.725@0.23.1280.725" timestamp="1585747818355" />
+    <state width="833" height="224" key="GridCell.Tab.1.left" timestamp="1585747818355">
+      <screen x="0" y="23" width="1280" height="725" />
+    </state>
+    <state width="833" height="224" key="GridCell.Tab.1.left/0.23.1280.725@0.23.1280.725" timestamp="1585747818355" />
+    <state width="833" height="224" key="GridCell.Tab.1.right" timestamp="1585747818356">
+      <screen x="0" y="23" width="1280" height="725" />
+    </state>
+    <state width="833" height="224" key="GridCell.Tab.1.right/0.23.1280.725@0.23.1280.725" timestamp="1585747818356" />
+    <state x="449" y="460" key="SettingsEditor" timestamp="1586151331800">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="283" y="26" key="SettingsEditor/0.23.1280.725@0.23.1280.725" timestamp="1585746194099" />
+    <state x="449" y="440" key="SettingsEditor/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1586142813630" />
+    <state x="449" y="460" key="SettingsEditor/0.23.2560.1417/2560.373.1920.994@0.23.2560.1417" timestamp="1586151331800" />
+    <state x="917" y="643" key="com.intellij.ide.util.TipDialog" timestamp="1585722518943">
+      <screen x="0" y="23" width="2560" height="1353" />
+    </state>
+    <state x="459" y="355" key="com.intellij.ide.util.TipDialog/0.23.1280.725@0.23.1280.725" timestamp="1585570855844" />
+    <state x="917" y="643" key="com.intellij.ide.util.TipDialog/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1585722518943" />
     <state x="917" y="672" key="com.intellij.ide.util.TipDialog/0.23.2560.1417/2560.373.1920.994@0.23.2560.1417" timestamp="1585310442142" />
+    <state x="743" y="309" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1585736988425">
+      <screen x="0" y="23" width="1280" height="725" />
+    </state>
+    <state x="743" y="309" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1280.725@0.23.1280.725" timestamp="1585736988425" />
+    <state x="1470" y="444" width="799" height="994" key="dock-window-1" timestamp="1586151056727">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="2830" y="373" width="799" height="1057" key="dock-window-1/0.23.2560.1353/2560.373.1920.1057@0.23.2560.1353" timestamp="1586145863932" />
+    <state x="1470" y="444" width="799" height="994" key="dock-window-1/0.23.2560.1417/2560.373.1920.994@0.23.2560.1417" timestamp="1586151056727" />
+    <state x="1073" y="48" width="890" height="1333" key="dock-window-2" timestamp="1586152447400">
+      <screen x="0" y="23" width="2560" height="1417" />
+    </state>
+    <state x="1073" y="48" width="890" height="1333" key="dock-window-2/0.23.2560.1417/2560.373.1920.994@0.23.2560.1417" timestamp="1586152447400" />
     <state x="945" y="332" width="670" height="676" key="search.everywhere.popup" timestamp="1585306236755">
       <screen x="0" y="23" width="2560" height="1353" />
     </state>
