@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!-- Webpage Title -->
+    <title>Hello, world!</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css" />
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- 구글폰트 -->
+    <link href="https://fonts.googleapis.com/css?family=Stylish&display=swap" rel="stylesheet">
+
+    <!-- style -->
+    <style type="text/css">
+        .title_1 {
+            width: 100pxl;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .lead {
+            width: 100pxl;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        * {
+            font-family: 'Stylish', sans-serif;
+        }
+
+        .wrap {
+            width: 900px;
+            margin: auto;
+        }
+
+        .comment {
+            color: blue;
+            font-weight: bold;
+        }
+
+        .jumbotron {
+            background-color: bisque;
+        }
+
+        .chart1 {
+            border: 1;
+        }
+    </style>
+    <script>
+        $(document).ready(function () {
+            // index.html 로드가 완료되면 자동으로 show_star() 함수를 호출합니다.
+            show_chart1();
+        });
+
+        function show_chart1() {
+            $('#chart_1').empty();
+
+            $.ajax({
+                type: 'GET',
+                url: '/api/list',
+                data: {},
+                success: function (response) {
+                    if (response['result'] == 'success') {
+                        let msg = response['msg'];
+                        alert(msg);
+                        let chart1 = response["chart1_list"]
+                        for (let i = 0; i < chart1.length; i++)
+                            make_chart1(geniekoreacrawl[i]["rank"], geniekoreacrawl[i]["title"], geniekoreacrawl[i]["singer"], geniekoreacrawl[i]["like"])
+                    }
+                    }
+                });
+            }
+
+        function make_table(rank, title, singer, like){
+            let temp_html =
+                    '<tr>\
+                        <td>'+rank+'</td>\
+                        <td>'+title+'</td>\
+                        <td>'+singer+'</td>\
+                        <td>'+like+'</td>\
+                    </tr>'
+
+            $('#chart1_table').append(temp_html);
+
+        }
+
+        function like_music(title) {
+            $.ajax({
+                type: 'POST',
+                url: '/api/like',
+                data: {title_give : title},
+                success: function (response) {
+                    if (response['result'] == 'success') {
+                        let msg = response['msg'];
+                        alert(msg);
+                        window.location.reload();
+                    }
+                }
+            });
+        }
+
+        function delete_star(title) {
+            $.ajax({
+                type: 'POST',
+                url: '/api/delete',
+                data: {title_give : title},
+                success: function (response) {
+                    if (response['result'] == 'success') {
+                        let msg = response['msg'];
+                        alert(msg);
+                        window.location.reload();
+                    }
+                }
+            });
+        }
+
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="jumbotron">
+            <h1 class="title_1">Flower Music</h1>
+            <p class="lead">for you, only you, your chart</p>
+            <hr class="my-4">
+        </div>
+    </div>
+    <table border=1, id="chart1_table">
+        <th>rank</th>
+        <th>title</th>
+        <th>singer</th>
+        <th>like</th>
+        <tr>
+            <!-- 첫번째 줄 시작 -->
+            <td>dd</td>
+            <td>dd</td>
+            <td>dd</td>
+            <td>dd</td>
+        </tr><!-- 첫번째 줄 끝 -->
+        <tr>
+            <!-- 두번째 줄 시작 -->
+            <td>첫번째 칸</td>
+            <td>두번째 칸</td>
+        </tr><!-- 두번째 줄 끝 -->
+    </table>
+</body>
+
+</html>
