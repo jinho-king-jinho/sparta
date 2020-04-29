@@ -31,14 +31,26 @@
 
     <!-- style -->
     <style type="text/css">
+        /* body, html {
+            height: 100%;
+        } */
+
+        html { 
+            background: url('https://t1.daumcdn.net/cfile/tistory/2364863E58869A281B') no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+
         .title_1 {
-            width: 100pxl;
-            margin: 0 auto;
+            width: 900px;
+            margin: auto;
             text-align: center;
         }
 
         .lead {
-            width: 100pxl;
+            width: 900px;
             margin: 0 auto;
             text-align: center;
         }
@@ -48,27 +60,93 @@
         }
 
         .wrap {
-            width: 900px;
+            background: url('https://t1.daumcdn.net/cfile/tistory/2364863E58869A281B') no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            width: 100%;
+            margin: 100px 100px 100px 0;
+            text-align: center;
+        }
+        .chart_table {
+            table-layout:fixed;
+            height: 1300px;
+            width: 250px;
+            margin: 0 auto;
+            /* border-collapse: collapse; 
+		    border-spacing: 0;		 
+            text-align: center; */
+        }
+
+        .chart_text {
+            margin: auto;
+            text-align: center;
+        }
+
+        .geniemusicbox {
+            width: auto;
+            margin: auto; 
+            padding: 10px;
+            text-align: center;
+        }
+
+        #chart1_table tr td {
+            text-align: center;
+            font-size: x-small;
+        }
+
+        #chart1_table th {
+            text-align: center;  
+            font-size: 10px;
+        }
+
+        #chart2_table tr td {
+            text-align: center;
+            font-size: 3px;
+        }
+
+        #chart2_table th {
+            text-align: center;  
+            font-size: 10px;
+        }
+        #chart3_table tr td {
+            text-align: center;
+            font-size: 3px;
+        }
+
+        #chart3_table th {
+            text-align: center;  
+            font-size: 10px;
+        }
+        .chart {
+            float: left;
+            width: 25%;   
+            border: 1;    
+        }
+
+        .chart_padding { 
             margin: auto;
         }
 
-        .comment {
-            color: blue;
-            font-weight: bold;
-        }
-
-        .jumbotron {
-            background-color: bisque;
-        }
-
-        .chart1 {
-            border: 1;
+        .button_1 {
+            font-size: 5px;
         }
     </style>
     <script>
         $(document).ready(function () {
             // index.html 로드가 완료되면 자동으로 show_star() 함수를 호출합니다.
             show_chart1();
+        });
+
+        $(document).ready(function () {
+            // index.html 로드가 완료되면 자동으로 show_star() 함수를 호출합니다.
+            show_chart2();
+        });
+
+        $(document).ready(function () {
+            // index.html 로드가 완료되면 자동으로 show_star() 함수를 호출합니다.
+            show_chart3();
         });
 
         function show_chart1() {
@@ -81,29 +159,28 @@
                 success: function (response) {
                     if (response['result'] == 'success') {
                         let msg = response['msg'];
-                        alert(msg);
+                        
                         let chart1 = response["chart1_list"]
                         for (let i = 0; i < chart1.length; i++)
-                            make_chart1(geniekoreacrawl[i]["rank"], geniekoreacrawl[i]["title"], geniekoreacrawl[i]["singer"], geniekoreacrawl[i]["like"])
+                            make_table1(chart1[i]["rank"], chart1[i]["title"], chart1[i]["singer"], chart1[i]["like"])
                     }
                     }
                 });
             }
 
-        function make_table(rank, title, singer, like){
+        function make_table1(rank, title, singer, like){
             let temp_html =
-                    '<tr>\
-                        <td>'+rank+'</td>\
-                        <td>'+title+'</td>\
-                        <td>'+singer+'</td>\
-                        <td>'+like+'</td>\
+                    '<tr class=chart_text>\
+                        <td class=rank_text>'+rank+'</td>\
+                        <td class=title_text>'+title+'</td>\
+                        <td class=singer_text>'+singer+'</td>\
+                        <td class=like_text>'+like+'  =  '+'<button onclick="like_music1(\''+title+'\')" type="button" class="button_1">♥</button> <button onclick="delete_music1(\''+title+'\')"type="button" class="button_1">-</button></td>\
                     </tr>'
 
             $('#chart1_table').append(temp_html);
 
         }
-
-        function like_music(title) {
+        function like_music1(title) {
             $.ajax({
                 type: 'POST',
                 url: '/api/like',
@@ -117,8 +194,7 @@
                 }
             });
         }
-
-        function delete_star(title) {
+        function delete_music1(title) {
             $.ajax({
                 type: 'POST',
                 url: '/api/delete',
@@ -133,35 +209,176 @@
             });
         }
 
+        function show_chart2() {
+            $('#chart_2').empty();
+
+            $.ajax({
+                type: 'GET',
+                url: '/api/list2',
+                data: {},
+                success: function (response) {
+                    if (response['result'] == 'success') {
+                        let msg = response['msg'];
+                        
+                        let chart2 = response["chart2_list"]
+                        for (let i = 0; i < 50; i++)
+                            make_table2(chart2[i]["rank"], chart2[i]["title"], chart2[i]["singer"], chart2[i]["like"])
+                    }
+                    }
+                });
+            }
+
+        function make_table2(rank, title, singer, like){
+            let temp_html =
+                    '<tr class=chart_text>\
+                        <td class=rank_text>'+rank+'</td>\
+                        <td class=title_text>'+title+'</td>\
+                        <td class=singer_text>'+singer+'</td>\
+                        <td class=like_text>'+like+'  =  '+'<button onclick="like_music2(\''+title+'\')" type="button" class="button_1">♥</button> <button onclick="delete_music2(\''+title+'\')"type="button" class="button_1">-</button></td>\
+                    </tr>'
+
+            $('#chart2_table').append(temp_html);
+
+        }
+
+        function like_music2(title) {
+            $.ajax({
+                type: 'POST',
+                url: '/api/like2',
+                data: {title_give : title},
+                success: function (response) {
+                    if (response['result'] == 'success') {
+                        let msg = response['msg'];
+                        alert(msg);
+                        window.location.reload();
+                    }
+                }
+            });
+        }
+        function delete_music2(title) {
+            $.ajax({
+                type: 'POST',
+                url: '/api/delete2',
+                data: {title_give : title},
+                success: function (response) {
+                    if (response['result'] == 'success') {
+                        let msg = response['msg'];
+                        alert(msg);
+                        window.location.reload();
+                    }
+                }
+            });
+        }
+
+        function show_chart3() {
+            $('#chart_3').empty();
+
+            $.ajax({
+                type: 'GET',
+                url: '/api/list3',
+                data: {},
+                success: function (response) {
+                    if (response['result'] == 'success') {
+                        let msg = response['msg'];
+                        
+                        let chart3 = response["chart3_list"]
+                        for (let i = 0; i < chart3.length; i++)
+                            make_table3(chart3[i]["rank"], chart3[i]["title"], chart3[i]["singer"], chart3[i]["like"])
+                    }
+                    }
+                });
+            }
+
+        function make_table3(rank, title, singer, like){
+            let temp_html =
+                    '<tr class=chart_text>\
+                        <td class=rank_text>'+rank+'</td>\
+                        <td class=title_text>'+title+'</td>\
+                        <td class=singer_text>'+singer+'</td>\
+                        <td class=like_text>'+like+'  =  '+'<button onclick="like_music3(\''+title+'\')" type="button" class="button_1">♥</button> <button onclick="delete_music3(\''+title+'\')"type="button" class="button_1">-</button></td>\
+                    </tr>'
+
+            $('#chart3_table').append(temp_html);
+
+        }
+
+        function like_music3(title) {
+            $.ajax({
+                type: 'POST',
+                url: '/api/like3',
+                data: {title_give : title},
+                success: function (response) {
+                    if (response['result'] == 'success') {
+                        let msg = response['msg'];
+                        alert(msg);
+                        window.location.reload();
+                    }
+                }
+            });
+        }
+        function delete_music3(title) {
+            $.ajax({
+                type: 'POST',
+                url: '/api/delete3',
+                data: {title_give : title},
+                success: function (response) {
+                    if (response['result'] == 'success') {
+                        let msg = response['msg'];
+                        alert(msg);
+                        window.location.reload();
+                    }
+                }
+            });
+        }
     </script>
 </head>
 
 <body>
-    <div class="wrap">
-        <div class="jumbotron">
-            <h1 class="title_1">Flower Music</h1>
-            <p class="lead">for you, only you, your chart</p>
-            <hr class="my-4">
+    <div> 
+        <div class="wrap">              
+                <h1 class="title_1">Flower Music</h1>
+                <p class="lead">for you, only you, your chart</p>
+        </div>
+        <div class=chart>
+            <div class="chart_padding">
+                <table class="geniemusicbox">
+                    <th>Genie Music</th>
+                </table>
+                <table border=2, id="chart1_table" class=chart_table>
+                    <th style="width: 10px">rank</th>
+                    <th style="width: 50px">title</th>
+                    <th style="width: 50px">singer</th>
+                    <th style="width: 100px">like</th>
+                </table>
+            </div>
+        </div>
+        <div class=chart>
+            <div class="chart_padding">
+                <table class="geniemusicbox">
+                    <th>Bugs Music</th>
+                </table>
+                <table border=2, id="chart2_table" class=chart_table>
+                    <th style="width: 10px">rank</th>
+                    <th style="width: 50px">title</th>
+                    <th style="width: 50px">singer</th>
+                    <th style="width: 100px">like</th>
+                </table>
+            </div>
+        </div>
+        <div class=chart>
+            <div class="chart_padding">
+                <table class="geniemusicbox">
+                    <th>Mellon Music</th>
+                </table>
+                <table border=2, id="chart3_table" class=chart_table>
+                    <th style="width: 10px">rank</th>
+                    <th style="width: 50px">title</th>
+                    <th style="width: 50px">singer</th>
+                    <th style="width: 100px">like</th>
+                </table>
+            </div>
         </div>
     </div>
-    <table border=1, id="chart1_table">
-        <th>rank</th>
-        <th>title</th>
-        <th>singer</th>
-        <th>like</th>
-        <tr>
-            <!-- 첫번째 줄 시작 -->
-            <td>dd</td>
-            <td>dd</td>
-            <td>dd</td>
-            <td>dd</td>
-        </tr><!-- 첫번째 줄 끝 -->
-        <tr>
-            <!-- 두번째 줄 시작 -->
-            <td>첫번째 칸</td>
-            <td>두번째 칸</td>
-        </tr><!-- 두번째 줄 끝 -->
-    </table>
 </body>
 
 </html>
